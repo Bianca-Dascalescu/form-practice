@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&family=Caveat&family=Hanken+Grotesk:wght@200&family=Libre+Baskerville&family=Overpass:wght@400;700&family=Poppins&family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Form</title>
+  </head>
+  <body>
+    <div id="card">
+      <form id="myForm">
+        <p id="welcome-message">WELCOME</p>
+
+        <div class="input-container">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" />
+        </div>
+        <div class="input-container">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" />
+        </div>
+        <div class="input-container">
+          <p>Gender:</p>
+
+          <label for="male">Male</label>
+          <input type="radio" id="male" name="gender" />
+
+          <label for="female">Female</label>
+          <input type="radio" id="female" name="gender" />
+
+          <label for="other">Other</label>
+          <input type="radio" id="other" name="gender" />
+        </div>
+        <div class="input-container">
+          <label for="occupation">Occupation</label>
+
+          <select id="occupation" name="occupation">
+            <option value="employed">Employed</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="student">Student</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" />
+        </div>
+        <div class="input-container">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" />
+        </div>
+        <div class="input-container">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <button type="submit" value="submit" id="submit-button">Submit</button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
